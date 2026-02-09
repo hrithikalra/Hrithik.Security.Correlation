@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<!-- Package identity -->
+		<PackageId>Hrithik.Security.Correlation</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Hrithik Kalra</Authors>
+		<Company>Hrithik</Company>
+
+		<!-- NuGet metadata -->
+		<Description>Lightweight correlation ID generation, validation, propagation, and logging for .NET applications.</Description>
+		<PackageTags>correlation,correlation-id,logging,distributed-tracing,aspnetcore,microservices</PackageTags>
+		<RepositoryUrl>https://github.com/hrithikalra/Hrithik.Security.Correlation</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/hrithikalra/Hrithik.Security.Correlation</PackageProjectUrl>
+		<Nullable>enable</Nullable>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+
+		<!-- README -->
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- Quality -->
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.2" />
+  </ItemGroup>
+
+</Project>
